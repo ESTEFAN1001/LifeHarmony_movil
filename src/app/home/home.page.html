@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        Home
+        <img src="https://firebasestorage.googleapis.com/v0/b/jeong-4b94a.appspot.com/o/image_2023-11-08_211659175.png?alt=media&token=43060f86-7376-4456-8a09-09d7a1609ea9&_gl=1*kghpbs*_ga*MTEwMTg0MzMxNC4xNjk2MzAwNDQ2*_ga_CW55HF8NVT*MTY5OTQ0NTgwNi4yMi4xLjE2OTk0NDY3MjcuNTAuMC4w" alt="" width="100px" height="100px">
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header> 
+
+<ion-content [fullscreen]="true" class="home-content">
+  <ion-card class="welcome-card">
+    <ion-card-content class="ion-text-center">
+      <div class="header-section">
+        <h1>Life Harmony</h1>
+        <h2>Un Descubre el equilibrio perfecto para tu vida con Life Harmony. Personaliza tu dieta y mejora tu bienestar.</h2>
+        <img src="https://firebasestorage.googleapis.com/v0/b/jeong-4b94a.appspot.com/o/avatar.png?alt=media&token=cfa26112-77f2-4825-9c99-0c5c039cb245&_gl=1*1muqx2p*_ga*MTEwMTg0MzMxNC4xNjk2MzAwNDQ2*_ga_CW55HF8NVT*MTY5OTQ1MDEyMC4yMy4xLjE2OTk0NTAyMjcuMTcuMC4w" alt="" width="80%" height="80%">
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <div class="likes-section">
+    <h3>Elije una dieta personalizada:</h3>
+    <div class="likes-images">
+      <img src="https://firebasestorage.googleapis.com/v0/b/lifeharmony-bd5eb.appspot.com/o/alimentos%2Fpermitidos.jpg?alt=media&token=fd9bd470-2fb7-4b09-add3-085f1695c8c2" alt="Permitidos" width="30%" height="30%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/lifeharmony-bd5eb.appspot.com/o/alimentos%2Fmoderados.jpg?alt=media&token=6a04262c-f9f0-4cfc-9cae-354a9aa1177f" alt="Moderados" width="30%" height="30%">
+      <img src="https://firebasestorage.googleapis.com/v0/b/lifeharmony-bd5eb.appspot.com/o/alimentos%2Friesgosos.jpg?alt=media&token=a4fae9be-b71b-41d0-9a3d-80458006248d" alt="Riesgosos" width="30%" height="30%">
+    </div>
+  </div>
+  <div class="social-links">
+    <ion-button expand="full" color="facebook" (click)="openFacebook()">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+            Whatsapp
+    </ion-button>
+    <ion-button expand="full" color="facebook" (click)="openFacebook()">
+      <ion-icon name="logo-facebook"></ion-icon>
+        Facebook
+    </ion-button>
+   
+    <ion-button expand="full" color="instagram" (click)="openInstagram()">
+      <ion-icon name="logo-instagram"></ion-icon>
+        Instagram
+    </ion-button>
+  </div>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title class="ion-text-center">
+          Contáctanos
+      </ion-title>
+    </ion-toolbar>
+    <ion-toolbar class="footer-info" color="light">
+        <ion-buttons slot="start">
+          <ion-icon name="mail"></ion-icon>
+          <ion-label>Email: info@lifeharmony.com</ion-label>
+        </ion-buttons>
+        <ion-buttons slot="end">
+          <ion-icon name="call"></ion-icon>
+          <ion-label>Teléfono: +591 75908882</ion-label>
+        </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        Plan Alimentacion
+        <img src="https://firebasestorage.googleapis.com/v0/b/jeong-4b94a.appspot.com/o/image_2023-11-08_211659175.png?alt=media&token=43060f86-7376-4456-8a09-09d7a1609ea9&_gl=1*kghpbs*_ga*MTEwMTg0MzMxNC4xNjk2MzAwNDQ2*_ga_CW55HF8NVT*MTY5OTQ0NTgwNi4yMi4xLjE2OTk0NDY3MjcuNTAuMC4w" alt="" width="100px" height="100px">
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngFor="let dieta of info">
+    <h1>{{ dieta.nombre }}</h1>
+    <p>{{ dieta.recomendacion }}</p>
+    <img [src]="dieta.icon" alt="Icono de la dieta">
+    <div *ngFor="let subDieta of dieta.alimentos">
+      <h3>{{ subDieta.dia }}</h3>
+      <div class="columnas">
+        <div class="columna-izquierda">
+          <h4>Alimentos</h4>
+          <ul>
+            <li *ngFor="let alimento of subDieta.alimentos">{{ alimento }}</li>
+          </ul>
+        </div>
+        <div class="columna-derecha">
+          <h4>Porciones</h4>
+          <ul>
+            <li *ngFor="let porcion of subDieta.porciones">{{ porcion }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

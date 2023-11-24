@@ -1,0 +1,94 @@
+ion-header {
+    ion-toolbar {
+      --background: #1b3a64; // Reemplaza este valor con el código de color que desees
+      // Otros estilos para ion-toolbar si son necesarios
+    }
+  }
+  
+ion-title {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: Arial;
+  min-height: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+      margin-left: auto;
+    }
+  }
+}
+ion-content {
+    --background : rgb(1, 16, 29);
+    div {
+      margin-bottom: 5px;
+      text-align: center;
+      h1 {
+        font-size: 2.5rem;
+        color: #ff94e1;
+      }
+  
+      p {
+        font-size: 0.9rem;
+        color: rgb(155, 203, 244);
+        text-align: start;
+        margin-left: 15px;
+      }
+  
+      img {
+        //box-shadow: 0 4px 6px rgba(255, 255, 255, 0.438);
+        display: flex;
+        margin: auto;
+        padding: 15px;
+        justify-content: center;
+        gap: 3rem; // Espacio entre imágenes
+        border-radius: 10px;
+      }
+  
+      h3 {
+        color: rgb(221, 182, 136);
+        text-align: end;
+        font-size: 1.3em;
+        margin-bottom: 1px;
+        padding-right: 15px;
+      }
+  
+      .columnas {
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.438);
+        display: flex;
+        justify-content: space-between;
+        
+        .columna-izquierda,
+        .columna-derecha {
+          width: 48%;
+        }
+  
+        h4 {
+          color: aqua;
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+        }
+  
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+  
+          li {
+            color:aliceblue;
+            font-size: 1rem;
+            margin-bottom: 5px;
+            text-align: start;
+            padding-left: 24px;
+          }
+        }
+      }
+    }
+  }
+  

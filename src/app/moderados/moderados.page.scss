@@ -1,0 +1,59 @@
+
+ion-header {
+    ion-toolbar {
+      --background: #1b3a64; // Reemplaza este valor con el código de color que desees
+      // Otros estilos para ion-toolbar si son necesarios
+    }
+  }
+  
+ion-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial;
+  min-height: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+      margin-left: auto;
+    }
+  }
+}
+.community-page {
+  --background: #262626; // o el color de fondo de tu elección
+
+  .community-card {
+    background: #333; // o el color de fondo de las tarjetas
+    border-radius: 8px;
+    color: #fff; // para el texto
+
+    img {
+      width: 100%;
+      border-top-left-radius: 8px; // para mantener el borde redondeado
+      border-top-right-radius: 8px;
+    }
+
+    ion-card-header {
+      background: #444; // o el color de fondo del header de la tarjeta
+      ion-card-title {
+        font-size: 1.2rem; // o el tamaño de tu elección
+      }
+    }
+
+    ion-card-content {
+      padding-top: 15px;
+      background: #333; // o el color de fondo del contenido de la tarjeta
+      font-size: 0.8rem; // o el tamaño de tu elección
+      ion-note {
+        font-size: 0.7rem; // o el tamaño de tu elección
+        color: #aaa; // o el color de tu elección
+      }
+    }
+  }
+}

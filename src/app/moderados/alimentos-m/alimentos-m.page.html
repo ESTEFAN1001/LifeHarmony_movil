@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <ion-col *ngFor="let item of data">
+          {{ item.title }}
+        </ion-col>
+        <img src="https://firebasestorage.googleapis.com/v0/b/jeong-4b94a.appspot.com/o/image_2023-11-08_211659175.png?alt=media&token=43060f86-7376-4456-8a09-09d7a1609ea9&_gl=1*kghpbs*_ga*MTEwMTg0MzMxNC4xNjk2MzAwNDQ2*_ga_CW55HF8NVT*MTY5OTQ0NTgwNi4yMi4xLjE2OTk0NDY3MjcuNTAuMC4w" alt="" width="100px" height="100px">
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid fixed>
+    <ion-card-title>
+      <ion-col *ngFor="let item of data">
+        {{ item.description }}
+      </ion-col>
+    </ion-card-title>
+    <ion-row>
+      <ion-col *ngFor="let item of info">
+        <!-- Tarjeta para cada favorito -->
+        <ion-card class="favorite-card">
+          <ion-card-header>
+            <ion-img [src]="item.icon"></ion-img>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-title>{{ item.title }}</ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

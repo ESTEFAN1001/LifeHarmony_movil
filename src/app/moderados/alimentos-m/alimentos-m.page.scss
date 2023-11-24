@@ -1,0 +1,66 @@
+
+ion-header {
+    ion-toolbar {
+      --background: #1b3a64; // Reemplaza este valor con el código de color que desees
+      // Otros estilos para ion-toolbar si son necesarios
+    }
+  }
+  
+ion-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial;
+  min-height: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+      margin-left: auto;
+    }
+  }
+}
+ion-content {
+  --background: #1e1e1e; // Color de fondo negro como en tu maqueta
+
+  .favorite-card {
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.438);
+    ion-card-header {
+      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.438);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      ion-img {
+        width: 360px; 
+        height: 200px; 
+      }
+    }
+    ion-card-content {
+      ion-card-title {
+        text-align: center;
+        font-size: 14px;
+        color: #f2a7a7; // Texto blanco
+      }
+    }
+    background: #1e1e1e; // Fondo de las tarjetas
+    border-radius: 8px; // Esquinas redondeadas
+    margin: 8px;
+  }
+}
+ion-card-title{
+  color: #d1b984;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Arial;
+  min-height: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}

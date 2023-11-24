@@ -1,0 +1,34 @@
+ion-header {
+    ion-toolbar {
+      --background: #1b3a64; // Reemplaza este valor con el código de color que desees
+      // Otros estilos para ion-toolbar si son necesarios
+    }
+}
+  
+ion-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial;
+  min-height: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+      margin-left: auto;
+    }
+  }
+}
+ion-button{
+ margin-top: 20px;
+ margin-left: 20px;
+ display: flex;
+ align-items: first baseline;
+ width: 200px;
+ height: 50px;
+}

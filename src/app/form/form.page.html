@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        Formulario
+        <img src="https://firebasestorage.googleapis.com/v0/b/jeong-4b94a.appspot.com/o/image_2023-11-08_211659175.png?alt=media&token=43060f86-7376-4456-8a09-09d7a1609ea9&_gl=1*kghpbs*_ga*MTEwMTg0MzMxNC4xNjk2MzAwNDQ2*_ga_CW55HF8NVT*MTY5OTQ0NTgwNi4yMi4xLjE2OTk0NDY3MjcuNTAuMC4w" alt="" width="100px" height="100px">
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="community-page">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName="nombre" [(ngModel)]="nombre" name="nombre" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Género</ion-label>
+      <ion-select formControlName="genero" [(ngModel)]="genero" name="genero" required>
+        <ion-select-option value="Varon">Varon</ion-select-option>
+        <ion-select-option value="Mujer">Mujer</ion-select-option>
+        <ion-select-option value="Otros">Otros</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Fecha de Nacimiento</ion-label>
+      <br>
+      <ion-input type="date" formControlName="fechaNacimiento" [(ngModel)]="fechaNacimiento" name="fechaNacimiento" required ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Peso (Últimos 3 meses)</ion-label>
+      <ion-input type="number" step="0.1" formControlName="peso" [(ngModel)]="peso" name="peso" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Talla (Últimos 3 meses)</ion-label>
+      <ion-input type="number" step="0.1" formControlName="talla" [(ngModel)]="talla" name="talla" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Tipo de Diabetes</ion-label>
+      <ion-select [(ngModel)]="tipoDiabetes" formControlName="tipoDiabetes" name="tipoDiabetes" required>
+        <ion-select-option value="Tipo 1">Tipo 1</ion-select-option>
+        <ion-select-option value="Tipo 2">Tipo 2</ion-select-option>
+        <ion-select-option value="Gestacional">Gestacional</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Alergias a alimentos</ion-label>
+      <ion-textarea formControlName="alergias" [(ngModel)]="alergias" name="alergias" rows="3"></ion-textarea>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Actividad física o ejercicio</ion-label>
+      <ion-select formControlName="actividadFisica" [(ngModel)]="actividadFisica" name="actividadFisica" required>
+        <ion-select-option value="Si realizo">Si realizo</ion-select-option>
+        <ion-select-option value="No realizo">No realizo</ion-select-option>
+        <ion-select-option value="Una vez a la semana">Una vez a la semana</ion-select-option>
+        <ion-select-option value="De vez en cuando">De vez en cuando</ion-select-option>
+        <ion-select-option value="Nunca">Nunca</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Nivel de motivación (%)</ion-label>
+      <ion-range formControlName="nivelMotivacion" [(ngModel)]="nivelMotivacion" name="nivelMotivacion" min="1" max="100" step="1"></ion-range>
+    </ion-item>
+  
+    <ion-button expand="full" type="submit" [disabled]="!form.valid">Enviar</ion-button>
+  </form>
+</ion-content>

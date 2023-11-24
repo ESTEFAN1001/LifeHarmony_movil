@@ -1,0 +1,87 @@
+ion-header {
+    ion-toolbar {
+      --background: #1b3a64;
+    }
+  }
+  
+ion-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial;
+  min-height: 20px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+      margin-left: auto;
+    }
+  }
+}
+.home-content {
+  --background: #1e1e1e; // Fondo negro como en tu maqueta
+  color: #c893de; // Texto blanco para contraste
+
+  .header-section {
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+      color: #ff94e1;
+    }
+    h2 {
+      font-size: 1.2zzrem;
+      color: rgb(155, 203, 244);
+    }
+    
+  }
+}
+
+.likes-section {
+    text-align: left;
+    margin-left: 0px;
+    h3 {
+      font-size: 1rem;
+      margin: 1rem ;
+      margin-left: 15px;
+    }
+    .likes-images {
+      display: flex;
+      justify-content: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-top:5px;
+      padding-bottom:5px;
+      margin-bottom: 15px;
+      gap: 1rem; // Espacio entre imágenes
+      border-radius: 0px;
+
+      img {
+        border-radius: 0px;
+      }
+    }
+    
+    blockquote {
+      margin-top: 10px;
+      //box-shadow: 0 4px 6px rgba(255, 255, 255, 0.438);
+      border-radius: 10px;
+      font-style: italic;
+      color: #c893de;
+      font-size: 18px;
+      margin-bottom: 10px;
+      cite{
+        font-style: italic;
+        color: #edc4ff;
+        font-size: 12px;
+      }
+    }
+  }
+  ion-footer{
+    ion-toolbar {
+      --background: #1b3a64;
+    }
+  }

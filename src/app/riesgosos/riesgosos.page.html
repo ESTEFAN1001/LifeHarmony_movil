@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        Alimentos Riesgosos
+        <img src="https://firebasestorage.googleapis.com/v0/b/jeong-4b94a.appspot.com/o/image_2023-11-08_211659175.png?alt=media&token=43060f86-7376-4456-8a09-09d7a1609ea9&_gl=1*kghpbs*_ga*MTEwMTg0MzMxNC4xNjk2MzAwNDQ2*_ga_CW55HF8NVT*MTY5OTQ0NTgwNi4yMi4xLjE2OTk0NDY3MjcuNTAuMC4w" alt="" width="100px" height="100px">
+      </div>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="community-page">
+  <ion-card class="community-card" *ngFor="let item of grupo_alimenticio">
+    <ion-card-header>
+      <ion-img [src]="item.icon"></ion-img>
+    </ion-card-header>
+    <ion-card-header>
+      <ion-card-title>{{ item.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ item.description }}</p>
+      <ion-button fill="clear" [routerLink]="[item.link]" [queryParams]="{tipo: item.tipo}">
+        Ver más
+      </ion-button>      
+    </ion-card-content>
+  </ion-card>
+</ion-content>
